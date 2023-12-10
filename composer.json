@@ -1,0 +1,20 @@
+{
+  "name": "dev-comrade/grpc-php-example",
+  "require": {
+    "php": ">=8.2.0",
+    "grpc/grpc": "1.57.0"
+  },
+  "require-dev": {
+    "google/auth": "^v1.3.0"
+  },
+  "suggest": {
+    "ext-protobuf": "For better performance, install the protobuf C extension.",
+    "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+  },
+  "autoload": {
+    "psr-4": {
+      "GPBMetadata\\": "src/proto/GPBMetadata",
+      "Helloworld\\": "src/proto/Helloworld"
+    }
+  }
+}
